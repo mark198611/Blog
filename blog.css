@@ -1,0 +1,87 @@
+.container {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "header header header"
+  "featured featured latest"
+  "business culture latest"
+  "sample sample recommended"
+  "image image categories"  
+  "another another categories"
+  "footer footer footer";
+  grid-gap: 10px;
+  height: 100vh;
+}
+
+.header { grid-area: header; }
+.featured { grid-area: featured; }
+.latest { grid-area: latest; }
+.sample { grid-area: sample; }
+.culture { grid-area: culture; }
+.recommended { grid-area: recommended; }
+.business { grid-area: business; }
+.another { grid-area: another; }
+.categories { grid-area: categories;}
+.image { grid-area: image}
+.footer { grid-area: footer; }
+
+
+
+.subscribe {
+  background-color: #6200EA;
+  width: 100vw;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  
+}
+
+.subscribe a {
+  color: #6200EA;
+  background-color: white;
+  padding: 5px 30px;
+  border-radius: 20px;
+  grid-column: 2 / span 1;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+a {
+  text-transform: uppercase;
+}
+
+img {
+  max-width: 20%;
+  height: auto;
+}
+
+.featured {
+  width: 90%;
+  height: 25vw;
+  background: url('Asset/roberto-nickson-5ui0tfMC5ts-unsplash.jpg') no-repeat top/cover;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.business {
+  max-width: 10px;
+}
+
+.head {
+  text-align: center;
+  padding: 20px;
+  background-color: #F4F3F5;
+  font-weight: 700;
+}
+
+.head a {
+  padding: 10px 15px;
+  font-size: 12px;
+  color: black;
+  text-decoration: none;
+  
+}
+
