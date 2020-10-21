@@ -1,21 +1,30 @@
-.container {
+.wrapper {
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+
+.container2 {
   display: grid;
-  margin: 0 auto;
+  
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas: 
-  "header header header"
+  
   "featured featured latest"
   "business culture latest"
   "sample sample recommended"
   "image image categories"  
-  "another another categories"
-  "footer footer footer";
+  "another another categories";
+  
   grid-gap: 10px;
-  height: 100vh;
+  min-height: calc(100vh - 50px);
+  background-color: #F4F3F5;
+  padding: 25px 100px;
 }
 
-.header { grid-area: header; }
+
 .featured { grid-area: featured; }
 .latest { grid-area: latest; }
 .sample { grid-area: sample; }
@@ -24,8 +33,8 @@
 .business { grid-area: business; }
 .another { grid-area: another; }
 .categories { grid-area: categories;}
-.image { grid-area: image}
-.footer { grid-area: footer; }
+.image { grid-area: image;}
+
 
 
 
@@ -59,11 +68,12 @@ img {
 }
 
 .featured {
+  box-sizing: border-box;
   width: 90%;
-  height: 25vw;
   background: url('Asset/roberto-nickson-5ui0tfMC5ts-unsplash.jpg') no-repeat top/cover;
   border-radius: 15px;
-  padding: 20px;
+  padding: 60px;
+  color: white;
 }
 
 .business {
@@ -73,7 +83,6 @@ img {
 .head {
   text-align: center;
   padding: 20px;
-  background-color: #F4F3F5;
   font-weight: 700;
 }
 
@@ -85,3 +94,363 @@ img {
   
 }
 
+
+
+.featured span,
+.featured h1,
+.featured p {
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.featured span {
+  font: normal normal bold 12px/15px Montserrat;
+  letter-spacing: 2.4px;
+  font-size: 1vw;
+  
+}
+
+.featured h1 {
+  letter-spacing: 0px;
+  font: normal normal bold 40px/50px Montserrat;
+  font-size: 3vw;
+  padding-bottom: 5px;
+}
+
+.featured p {
+  letter-spacing: 0px;
+  line-height: 20px;
+  padding-bottom: 8px;
+  font-size: 1.5vw;
+}
+
+.featured a {
+  text-decoration: none;
+  color: white;
+  font-size: 1vw;
+  border: 2px solid #FFFFFF;
+  padding: 5px 15px;
+  border-radius: 24px;
+  text-align: center;
+  letter-spacing: 2.4px;
+  font: normal normal bold Montserrat;
+  
+}
+
+.latest {
+  background: #FFFFFF;
+  border-radius: 15px;
+  display: grid;
+  
+}
+
+.latest span {
+  justify-self: stretch;
+  background-color: #6200EA;
+  border-radius: 15px 15px 0px 0px;
+  color: white;
+  font: normal normal bold 12px/15px Montserrat;
+  text-align: center;
+  padding: 1rem 0 1rem 0;
+  
+}
+
+.latest div {
+   display: flex;
+   flex-direction: row-reverse;
+   max-width: 90%;
+   margin: 0 auto;
+   padding: 20px;
+  
+  
+}
+
+.culture {
+   display: flex;
+   flex-direction: row-reverse;
+   max-width: 90%;
+   margin: 0 auto;
+   padding: 20px;
+}
+
+.business {
+   display: flex;
+   flex-direction: row-reverse;
+   max-width: 90%;
+   padding: 20px;
+}
+
+.picture {
+  background: transparent  url('Asset/younes-barri-zsHPnX2zstw-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 10vw;
+  border-radius: 10px;
+}
+
+.picture2 {
+  background: transparent  url('Asset/boxed-water-is-better-cXJCpV2Jv1Y-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 10vw;
+  border-radius: 10px;
+}
+
+.picture3 {
+  background: transparent  url('Asset/marco-oriolesi-wqLGlhjr6Og-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 10vw;
+  border-radius: 10px;
+}
+
+.picture4 {
+  background: transparent  url('Asset/samson-ZGjbiukp_-A-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 10vw;
+  border-radius: 10px;
+}
+
+.picture5 {
+  background: transparent  url('Asset/vitaliy-lyubezhanin-gfVofr15ICc-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 10vw;
+  border-radius: 10px;
+}
+
+.picture6 {
+  background: transparent  url('Asset/hal-gatewood-OgvqXGL7XO4-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 10vw;
+  border-radius: 10px;
+}
+
+.picture7 {
+  background: transparent  url('Asset/tom-barrett-M0AWNxnLaMw-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 10vw;
+  border-radius: 10px;
+}
+
+.picture8 {
+  background: transparent  url('Asset/nasa-Q1p7bh3SHj8-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 10vw;
+  border-radius: 10px;
+}
+
+.cikk {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  width: 50%;
+}
+
+.cikk a {
+  text-align: left;
+  font: normal normal bold 12px/15px Montserrat;
+  color: #6200EA;
+  text-decoration: none;
+}
+
+.cikk p {
+  text-align: left;
+  font: normal normal normal 14px/20px Montserrat;
+  color: #211138;
+}
+
+.view {
+  text-align: center;
+  font: normal normal bold 12px/15px Montserrat;
+  color: #B2ACBA;
+}
+
+.sample {
+  background: #FFFFFF;
+  border-radius: 15px;
+  padding: 3rem; 
+}
+
+.sample span {
+  color: #B2ACBA; 
+  padding: 3rem 0;
+}
+
+.sample h1 {
+  color: #211138;
+  font: normal normal bold 40px/50px Montserrat;
+  padding: 1rem 0;
+}
+
+.sample p {
+  color: #211138;
+  padding: 1rem 0;
+}
+
+.sample a {
+  text-decoration: none;
+  color: #6200EA;
+  border: 2px solid #6200EA;
+  padding: 5px 15px;
+  border-radius: 24px;
+  text-align: center;
+  letter-spacing: 2.4px;
+  font: normal normal bold 12px/15px Montserrat;
+  
+  
+}
+
+.another {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border-radius: 15px;
+  padding: 3rem;
+}
+
+.another span {
+  text-align: left;
+  font: normal normal bold 12px/15px Montserrat;
+  color: #B2ACBA;
+  padding: 3rem 0;
+}
+
+.another h1 {
+  text-align: left;
+  font: normal normal bold 40px/50px Montserrat;
+  color: #211138;
+  padding: 1rem 0;
+}
+
+.another p {
+  text-align: left;
+  font: normal normal normal 20px/30px Montserrat;
+  color: #211138;
+  padding: 1rem 0;
+}
+
+.another a {
+  text-decoration: none;
+  color: #6200EA;
+  border: 2px solid #6200EA;
+  padding: 5px 15px;
+  border-radius: 24px;
+  text-align: center;
+  letter-spacing: 2.4px;
+  font: normal normal bold 12px/15px Montserrat;
+}
+
+.image {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border-radius: 15px;
+  padding: 3rem;
+}
+
+.image span {
+  text-align: left;
+  font: normal normal bold 12px/15px Montserrat;
+  color: #B2ACBA;
+  padding: 3rem 0;
+}
+
+.image h1{
+  text-align: left;
+  font: normal normal bold 40px/50px Montserrat;
+  color: #211138;
+  padding: 1rem 0;
+}
+
+.image p{
+  text-align: left;
+  font: normal normal normal 20px/30px Montserrat;
+  color: #211138;
+  padding: 1rem 0;
+}
+
+.image a {
+  text-decoration: none;
+  color: #6200EA;
+  border: 2px solid #6200EA;
+  padding: 5px 15px;
+  border-radius: 24px;
+  text-align: center;
+  letter-spacing: 2.4px;
+  font: normal normal bold 12px/15px Montserrat;
+}
+
+.imgg {
+  background: transparent url('Asset/sean-o-KMn4VEeEPR8-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 10vw;
+  
+}
+
+.categories {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  text-decoration: none;
+  padding: 1.5rem;
+  display: inline-grid;
+}
+
+.categories span {
+  justify-self: stretch;
+  background-color: #6200EA;
+  border-radius: 15px 15px 0px 0px;
+  color: white;
+  font: normal normal bold 12px/15px Montserrat;
+  text-align: center;
+  padding: 1rem 0 0 0;
+  height: 2.5rem;
+}
+
+.categories a {
+  text-decoration: none;
+  padding: .5rem;
+  font: normal normal bold 12px/15px Montserrat;
+  color: #211138;
+}
+
+.recommended {
+  background: #FFFFFF;
+  border-radius: 15px;
+  display: grid;
+}
+
+.recommended span {
+  justify-self: stretch;
+  background-color: #6200EA;
+  border-radius: 15px 15px 0px 0px;
+  color: white;
+  font: normal normal bold 12px/15px Montserrat;
+  text-align: center;
+  padding: 1rem 0 1rem 0;
+}
+
+.recommended div {
+   display: flex;
+   flex-direction: row-reverse;
+   max-width: 90%;
+   margin: 0 auto;
+   padding: 20px;
+}
+
+
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 50px;
+  background: #211138 ;
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+
+footer a {
+  text-decoration: none;
+}
